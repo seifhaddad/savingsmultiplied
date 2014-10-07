@@ -1,7 +1,31 @@
+/* Colors:
+/* Dark Teal: #69C4CC */
+/* Light Teal: #CFEFEE */
+
+body { background-color: #69C4CC; }
+header { background-color: #CFEFEE; }
+nav#main { background-color: #F3CECD; }
+section { background-color: #FFFFFF; }
+
+/* Grid */
+body {
+}
+
+footer {
+  padding: 0 10em;
+}
+
+section {
+  margin: 0 10em;
+}
 header ul {
   float: right;
   list-style-type: none;
 }
+nav#main ul {
+  float: none;
+}
 header ul li {
   display: inline-block;
 }
+
