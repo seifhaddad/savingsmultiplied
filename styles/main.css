@@ -1,0 +1,7 @@
+header ul {
+  float: right;
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+}
