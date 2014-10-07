@@ -2,14 +2,13 @@
 /* Dark Teal: #69C4CC */
 /* Light Teal: #CFEFEE */
 
+h1, h2, h3, h4, h5, h6 { margin: 0; }
 body { background-color: #69C4CC; }
 header { background-color: #CFEFEE; }
 nav#main { background-color: #F3CECD; }
 section { background-color: #FFFFFF; }
 
 /* Grid */
-body {
-}
 
 footer {
   padding: 0 10em;
@@ -18,14 +17,22 @@ footer {
 section {
   margin: 0 10em;
 }
+header {
+  padding-top: 1em;
+}
 header ul {
   float: right;
   list-style-type: none;
 }
+nav#main {
+  padding: 0.5em;
+}
 nav#main ul {
   float: none;
+  margin: 0;
 }
-header ul li {
+
+header ul li, footer ul li, ul#social li {
   display: inline-block;
 }
 
