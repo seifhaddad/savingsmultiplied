@@ -4,29 +4,28 @@
     <title>seif's SavingsMultiplied</title>
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
-      <nav>
+    <nav>
         <ul>
-          <li><a href="#">sign in</a></li>
+          <li><a href="#" onclick="hide(document.querySelector('.login-modal'))">sign in</a></li>
           <li><a href="#">sign up</a></li>
         </ul>
       </nav>
-      <section>
-        <h1>Savings Multiplied</h1>
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
-        </nav>
-        <h3>where parents of multiples save, sell &amp; share</h3>
-      </section>
+      <div class='headSection'>
+        <h1>Savings</h1>
+        <h1>Multiplied</h1>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a class='blog' href="#">Blog</a>
+        <a class="myButton"href="#">Press</a>
+        <h5>where parents of multiples save, sell &amp; share</h5>
+      </div>
+
       <nav id="main">
-        <ul>
+        <ul class="line1">
           <li><a href="#">Buy</a></li>
           <li><a href="#">Sell</a></li>
           <li><a href="#">How it Works</a></li>
@@ -41,17 +40,28 @@
           </li>
         </ul>
       </nav>
+
+        <form>
+          <label>Username</label>
+          <input type="text" placeholder="username">
+          <label>password</label>
+          <input type="Password" Placeholder="passwd">
+          <input type="submit" value="login">
+          <input type="button" value="cancel">
+        </form>
+
     </header>
+
     <section>
       <div>
-        <h2>We're making one aspect of life easier for parents of multiples:</h2>
+        <h2>We're making one aspect of life easier for parents of multiples: </h2>
         <p>buying and selling gently used sets of clothes!</p>
-        <a href="#">Shop Now!</a>
+        <a class='myButton'href="#">Shop Now!</a>
       </div>
       <ul>
-        <li><img src="images/twins.jpg" /></li>
-        <li><img src="images/triplets.jpg" /></li>
-        <li><img src="images/quads.jpg" /></li>
+        <li class="babyPics"><img src="images/twins.jpg" style="height: 60%; width: 90%;"/></li>
+        <li class="babyPics"><img src="images/triplets.jpg" style='height: 60%; width: 90%;'/></li>
+        <li class="babyPics"><img src="images/quads.jpg" style="height: 60%; width: 90%; /></li>
       </ul>
       <ul id="social">
         <li><a href="#">find us on facebook</a></li>
@@ -62,7 +72,7 @@
     </section>
     <footer>
       <nav>
-        <ul>
+        <ul class="linkhere">
           <li><a href="#">Link here</a></li>
           <li><a href="#">Link here</a></li>
           <li><a href="#">Link here</a></li>
@@ -71,6 +81,7 @@
           <li><a href="#">Link here</a></li>
         </ul>
       </nav>
-    </footer>
-  </body>
+      </footer>
+      <div class="login-modal">
+      </body>
 </html>
